@@ -18,16 +18,16 @@ const INITIALIZE = true;
 async function main(){
     console.log("let's name some tokens in 2025!");
     const myKeypair = loadWalletKey();
-    const mint = new web3.PublicKey("AAVCgP8rtT1gsGT19imEoJ6Y6zUHe2uSCCdSFTmY3yi");
+    const mint = new web3.PublicKey("HtcmNSmpM6xGWLH7TcUiyjXQcej32qc15wyzawJYKNMn");
 
     const umi = createUmi("https://api.devnet.solana.com");
     const signer = createSignerFromKeypair(umi, fromWeb3JsKeypair(myKeypair))
     umi.use(signerIdentity(signer, true))
 
     const ourMetadata = { // TODO change those values!
-        name: "Silly Dragon Token", 
-        symbol: "SDT",
-        uri: "https://raw.githubusercontent.com/asad97290/spl-metadata-upload/main/metadata.json",
+        name: "Asset Avenue", 
+        symbol: "AAV",
+        uri: "https://ipfs.io/ipfs/QmTTf5sgsrriBB5kJsp489V3A3woYcCHSYFCHrZU8NQ6Si",
     }
     const onChainData = {
         ...ourMetadata,
