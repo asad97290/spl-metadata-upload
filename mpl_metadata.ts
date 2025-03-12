@@ -27,7 +27,7 @@ async function main(){
     const ourMetadata = { // TODO change those values!
         name: "Asset Avenue", 
         symbol: "AAV",
-        uri: "https://raw.githubusercontent.com/asad97290/spl-metadata-upload/main/metadata.json",
+        uri: "https://raw.githubusercontent.com/loopcreativeandy/video-tutorial-resources/main/metadataUpdate/metadata.json",
     }
     const onChainData = {
         ...ourMetadata,
