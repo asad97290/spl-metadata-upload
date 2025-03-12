@@ -27,7 +27,7 @@ async function main(){
     const ourMetadata = { // TODO change those values!
         name: "Asset Avenue", 
         symbol: "AAV",
-        uri: "https://ipfs.io/ipfs/QmTTf5sgsrriBB5kJsp489V3A3woYcCHSYFCHrZU8NQ6Si",
+        uri: "https://raw.githubusercontent.com/asad97290/spl-metadata-upload/main/metadata.json",
     }
     const onChainData = {
         ...ourMetadata,
