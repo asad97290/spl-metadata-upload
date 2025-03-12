@@ -13,12 +13,12 @@ export function loadWalletKey(): web3.Keypair {
     return loaded;
   }
 
-const INITIALIZE = false;
+const INITIALIZE = true;
 
 async function main(){
     console.log("let's name some tokens in 2025!");
     const myKeypair = loadWalletKey();
-    const mint = new web3.PublicKey("HtcmNSmpM6xGWLH7TcUiyjXQcej32qc15wyzawJYKNMn");
+    const mint = new web3.PublicKey("4Fa3EWgea8bYwFjRdAxn9b7FhzFSYZR41Tnkn39SvSLX");
 
     const umi = createUmi("https://api.devnet.solana.com");
     const signer = createSignerFromKeypair(umi, fromWeb3JsKeypair(myKeypair))
@@ -27,7 +27,7 @@ async function main(){
     const ourMetadata = { // TODO change those values!
         name: "Asset Avenue", 
         symbol: "AAV",
-        uri: "https://raw.githubusercontent.com/loopcreativeandy/video-tutorial-resources/main/metadataUpdate/metadata.json",
+        "image": "https://raw.githubusercontent.com/888memeT/888-metadata-meme/refs/heads/master/logo.png"
     }
     const onChainData = {
         ...ourMetadata,
