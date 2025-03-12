@@ -1,10 +1,6 @@
 {
   "name": "Asset Avenue",
   "symbol": "AAV",
-  "image": "https://amber-hilarious-ostrich-689.mypinata.cloud/files/bafkreiecv5gpk5oyhiougw5xdzr2vqajcdnrqngtr55imoxmomliiylm7i?X-Algorithm=PINATA1&X-Date=1732821748&X-Expires=315360000&X-Method=GET&X-Signature=18845cd0537debefc464fb5d188013d25ee0f6098c82215661d30b6098e7a1c9",
-  "file": "https://amber-hilarious-ostrich-689.mypinata.cloud/files/bafkreiecv5gpk5oyhiougw5xdzr2vqajcdnrqngtr55imoxmomliiylm7i?X-Algorithm=PINATA1&X-Date=1732821748&X-Expires=315360000&X-Method=GET&X-Signature=18845cd0537debefc464fb5d188013d25ee0f6098c82215661d30b6098e7a1c9",
   "description": "Decentralizing Dreams, Democratizing Wealth. Buy your house and Invest in Real Estate with Crypto.",
-  "website": "https://assetavenue.capital",
-  "twitter": "https://x.com/asset_avenue",
-  "telegram": "https://t.me/asset_avenue"
+  "image": "https://raw.githubusercontent.com/asad97290/spl-metadata-upload/main/aav-logo.jpg"
 }
