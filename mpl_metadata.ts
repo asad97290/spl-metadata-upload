@@ -13,7 +13,7 @@ export function loadWalletKey(): web3.Keypair {
     return loaded;
   }
 
-const INITIALIZE = true;
+const INITIALIZE = false;
 
 async function main(){
     console.log("let's name some tokens in 2025!");
