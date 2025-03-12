@@ -27,7 +27,8 @@ async function main(){
     const ourMetadata = { // TODO change those values!
         name: "Asset Avenue", 
         symbol: "AAV",
-        "image": "https://raw.githubusercontent.com/888memeT/888-metadata-meme/refs/heads/master/logo.png"
+        "uri": "https://raw.githubusercontent.com/888memeT/888-metadata-meme/refs/heads/master/metadata.json"
+
     }
     const onChainData = {
         ...ourMetadata,
