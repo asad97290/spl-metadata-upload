@@ -13,7 +13,7 @@ export function loadWalletKey(): web3.Keypair {
     return loaded;
   }
 
-const INITIALIZE = true;
+const INITIALIZE = false;
 
 async function main(){
     console.log("let's name some tokens in 2025!");
@@ -27,7 +27,7 @@ async function main(){
     const ourMetadata = { // TODO change those values!
         name: "Asset Avenue", 
         symbol: "AAV",
-        "uri": "https://raw.githubusercontent.com/888memeT/888-metadata-meme/refs/heads/master/metadata.json"
+        uri: "https://raw.githubusercontent.com/888memeT/888-metadata-meme/refs/heads/master/metadata.json"
 
     }
     const onChainData = {

@@ -11,10 +11,10 @@ const SPL_TOKEN_2022_PROGRAM_ID: PublicKey = publicKey(
   );
 
   
-export function loadWalletKey(keypairFile:string): web3.Keypair {
+  export function loadWalletKey(): web3.Keypair {
     const fs = require("fs");
     const loaded = web3.Keypair.fromSecretKey(
-      new Uint8Array(JSON.parse(fs.readFileSync(keypairFile).toString())),
+      new Uint8Array(JSON.parse(fs.readFileSync("/Users/asad97/.config/solana/id.json", 'utf8')))
     );
     return loaded;
   }
@@ -23,17 +23,17 @@ const INITIALIZE = true;
 
 async function main(){
     console.log("let's name some token-22 tokens in 2024!");
-    const myKeypair = loadWalletKey("AndyUCWqhEnEMqHAByoRSHz2mvQxdyXyki9UQ7YCrTBY.json");
-    const mint = new web3.PublicKey("SD2idHukkWPziSuhVnD6yf2gNbgzGYzyvv7787ZvazK");
+    const myKeypair = loadWalletKey();
+    const mint = new web3.PublicKey("TXZaujex3tCBr8dRc8gBs94p1NBt25ATrpejroRmWku");
 
     const umi = createUmi("https://api.devnet.solana.com");
     const signer = createSignerFromKeypair(umi, fromWeb3JsKeypair(myKeypair))
     umi.use(signerIdentity(signer, true))
 
     const ourMetadata = { // TODO change those values!
-        name: "Silly Dragon Token Extended", 
-        symbol: "SDT",
-        uri: "https://raw.githubusercontent.com/loopcreativeandy/video-tutorial-resources/main/metadataUpdate/metadata.json",
+        name: "COW", 
+        symbol: "COW",
+        uri: "https://raw.githubusercontent.com/asad97290/spl-metadata-upload/main/metadata22.json",
     }
     if(INITIALIZE){
         const onChainData = {
